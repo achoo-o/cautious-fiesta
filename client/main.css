@@ -4,10 +4,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.header {
-  background-color: lightcoral;
+header {
+  border: 1px black solid;
 }
 
 .main {
-  background-color: teal;
+  border: 1px black solid;
+}
+
+footer {
+  border: 1px black solid;
 }
