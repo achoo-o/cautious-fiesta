@@ -7,3 +7,7 @@ body {
 .header {
   background-color: lightcoral;
 }
+
+.main {
+  background-color: teal;
+}
