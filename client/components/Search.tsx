@@ -14,7 +14,7 @@ export default function Search({ setResults }: Props) {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setResults(animals.filter((animal) => {
-      return animal.toLowerCase().startsWith(event.target.value)}))
+      return animal.toLowerCase().startsWith(event.target.value.toLowerCase())}))
   }
 
   return (
