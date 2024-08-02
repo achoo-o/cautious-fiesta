@@ -1,4 +1,35 @@
+/* Color Variables */
+:root {
+  --dark: rgb(19, 21, 24);
+  --white: #fff;
+  --light-grey: #e0e0e0;
+  --accent: rgb(238, 152, 81);
+  --h1-color: rgb(255, 255, 255);
+  --h4-color: rgb(228, 228, 228);
+  --p-color: rgb(179, 179, 179);
+  --special-color: rgb(155, 155, 155);
+  --post-bg: rgb(35, 49, 68);
+  --spacer-height: 70px;
+}
+
 /* Utilities */
+.fw600 {
+  font-weight: 600;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.dark {
+  background-color: var(--dark);
+  color: var(--p-color)
+}
+
+.linkOrange {
+  color: var(--accent);
+}
+
 .gridList {
   position: relative;
   justify-content: center;
@@ -21,24 +52,46 @@
 /* General Styling */
 
 body {
-  background-color: #faf8f1;
+  padding: 0;
+  margin: 0;
+  background-color: --special-color;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
 
 header {
-  text-align: center;
-  border: 1px black solid;
+  display: table;
+  justify-content: center;
+  width: 100%;
+  min-height: 15vh;
+  h1 {
+    color: white;
+  }
+    h1 p{
+    display: table-cell;
+    margin: 0;
+  }
 }
 
 .main {
   position: relative;
   text-align: center;
-  border: 1px black solid;
 }
 
 footer {
+  display: table;
+  position: absolute;
   clear: both;
+  margin: 0;
+  width: 100%;
+  min-height: 50px;
   text-align: center;
-  border: 1px black solid;
+  background-color: var(--dark)
+}
+
+footer p {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+  color: var(--p-color)
 }

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <p>Created by <a href="https://github.com/achoo-o">achoo-o</a></p>
+      <p className="fw600">Created by <a className="linkOrange" href="https://github.com/achoo-o">achoo-o</a></p>
     </footer>
   )
 }
