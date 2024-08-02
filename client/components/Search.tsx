@@ -10,9 +10,6 @@ export default function Search({ setResults }: Props) {
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const userInput = event.target
-    console.log(userInput)
-    setResults(["help me"])
   }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
