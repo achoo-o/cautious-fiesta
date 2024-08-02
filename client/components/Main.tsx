@@ -8,8 +8,9 @@ export default function Main() {
 
   return (
     <div className="main">
-      <p>Body Content</p>
+      <p>Search for an animal!</p>
       <Search setResults={setResults}/>
+      <h2>Top 100 Animals</h2>
       <List animals={searchResults} />
     </div>
   )

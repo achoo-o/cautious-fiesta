@@ -4,7 +4,11 @@ interface Props {
 
 function List({animals}: Props) {
   return (
-    <p>{animals.map((animal, i) => (<li key={i}>{animal}</li>))}</p>
+    <div className="gridList">
+      <ul className="gridList">
+        {animals.map((animal, i) => (<li key={i} className="gridlist">{animal}</li>))}
+      </ul>
+    </div>
   )
 }
 
