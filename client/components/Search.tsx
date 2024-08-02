@@ -1,19 +1,30 @@
 import { useState } from 'react'
+import animals from '../../data/animals'
+// import List from './List'
 
-export default function Search() {
+interface Props {
+  setResults: React.Dispatch<React.SetStateAction<string[]>>
+}
 
-  const [searchResults, setResults] = useState([""])
+export default function Search({ setResults }: Props) {
 
-  function handleSearch(event:  React.FormEvent<HTMLInputElement>) {
-    setResults([""])
+  const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const userInput = event.target
+    console.log(userInput)
+    setResults(["help me"])
+  }
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setResults(animals.filter((animal) => {
+      return animal.toLowerCase().startsWith(event.target.value)}))
   }
 
   return (
     <div>
-      <p>{searchResults}</p>
-      <form>
-      <input onSubmit={handleSearch}/>
-      <button type="submit">Search</button>
+      <form onSubmit={handleSearch}>
+        <input onChange={handleChange} type="text" name="searchText"/>
+        <button type="submit">Search</button>
       </form>
     </div>
   )
