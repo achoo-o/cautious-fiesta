@@ -20,7 +20,7 @@ export default function Search({ setResults }: Props) {
   return (
     <div>
       <form onSubmit={handleSearch}>
-        <input onChange={handleChange} type="text" name="searchText"/>
+        <input onChange={handleChange} type="text" name="searchText" placeholder="Search for an animal"/>
         <button type="submit">Search</button>
       </form>
     </div>
