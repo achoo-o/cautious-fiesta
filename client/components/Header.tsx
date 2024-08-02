@@ -1,8 +1,8 @@
 export default function Header() {
   return (
     <header className="header">
-      <h1>Testing Forms</h1>
-      <p>React development has begun!</p>
+      <h1>Searching Animals</h1>
+      <p>Practicing using a 1-input React Form with Typescript and states.</p>
     </header>
   )
 }
