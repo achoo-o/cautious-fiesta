@@ -17,6 +17,10 @@
   font-weight: 600;
 }
 
+.margin30 {
+  margin: 30px;
+}
+
 .textCenter {
   text-align: center;
 }
@@ -30,19 +34,19 @@
   color: var(--accent);
 }
 
-.gridList {
+.grid-list {
   position: relative;
   justify-content: center;
 }
 
-.gridList ul {
+.grid-list ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   list-style-type: none;
 }
 
-.gridList li {
+.grid-list li {
   padding-block: 30px;
   margin: 2px;
   width: 20vw;
@@ -54,7 +58,6 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: --special-color;
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
@@ -94,4 +97,31 @@ footer p {
   margin: 0;
   vertical-align: middle;
   color: var(--p-color)
+}
+
+/* Home Page */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 250px;
+  background-color: var(--post-bg);
+  border-radius: 8px;
+  
+  a {
+    transition: font-size 0.2s ease;
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    font-size: 16.5px;
+    
+  }
 }

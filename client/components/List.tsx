@@ -4,9 +4,9 @@ interface Props {
 
 function List({animals}: Props) {
   return (
-    <div className="gridList">
-      <ul className="gridList">
-        {animals.map((animal, i) => (<li key={i} className="gridlist">{animal}</li>))}
+    <div className="grid-list">
+      <ul className="grid-list">
+        {animals.map((animal, i) => (<li key={i} className="grid-list">{animal}</li>))}
       </ul>
     </div>
   )
