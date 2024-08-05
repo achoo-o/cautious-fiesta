@@ -1,16 +1,10 @@
-import { useState } from 'react'
-import Search from './Search'
-import List from './List'
-import animals from '../../data/animals'
+import { Link } from 'react-router-dom'
 
 export default function Main() {
-  const [searchResults, setResults] = useState(animals)
 
   return (
-    <div className="main">
-      <h2>Top 100 Animals</h2>
-      <Search setResults={setResults}/>
-      <List animals={searchResults} />
-    </div>
+    <Link to={'top-100-animals'}>
+      <p>Top 100 Animals</p>
+    </Link>
   )
 }
