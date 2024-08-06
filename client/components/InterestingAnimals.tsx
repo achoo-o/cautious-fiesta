@@ -7,7 +7,7 @@ export default function InterestingAnimals() {
   
 
   return (
-    <div className="textCenter">
+    <div className="text-center">
       <h1>Some Cool Animals</h1>
       <p>Below are 8 animals I think are cool and/or cute. Click on each one to learn a little more about them!</p>
       {animalNames.map((name, i) => {
