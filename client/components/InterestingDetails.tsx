@@ -8,7 +8,7 @@ export default function InterestingDetails() {
   return (
     <div className="text-center">
       <h2>{prettyName}</h2>
-      <img src={`../images/${imageName}`}></img>
+      <img src={`/images/${imageName}`}></img>
       <p>
       <a href={imageLink}>Image</a> | 
       <a href={credit}>Credit</a>
