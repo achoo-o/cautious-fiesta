@@ -4,6 +4,8 @@ import interestingAnimals from '../../data/interestingAnimals'
 export default function InterestingDetails() {
   const { name } = useParams()
   const { imageName, imageLink, credit, description } = interestingAnimals[name]
+
+  if (!name) return <p>Error - animal not found.</p>
   let prettyName = name.match(/[A-Z][a-z]+/g)?.join(' ') //DesertRainFrog -> Desert Rain Frog
   return (
     <div className="text-center">
