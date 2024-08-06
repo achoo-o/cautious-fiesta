@@ -1,5 +1,5 @@
 # TO DO:
-[ ] Add interesting animals to animals object
+[x] Add interesting animals to animals object
 [ ] Add a description to each animal object
 [ ] Successfully list all animal names on page
 [ ] Add links to each animal which displays their image + links

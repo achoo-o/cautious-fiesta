@@ -47,6 +47,25 @@ const interestingAnimals = {
     credit: 'https://unsplash.com/@iqsphotography?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash',
     description: 'Carnivorous mammals that use little rocks as tools to crack open foods.'
   },
+  JapaneseSpiderCrab: {
+    imageName: 'spidercrab.jpg',
+    imageLink: '',
+    credit: '',
+    description: 'Its legs are about 100-120cm long.'
+  },
+  GoblinShark: {
+    imageName: 'goblinshark.jpg',
+    imageLink: '',
+    credit: '',
+    description: 'A rare species of deep-sea shark, sometimes referred to as a "living fossil" because of how old its lineage is.'
+  },
+  DesertRainFrog: {
+    imageName: 'frug.jpg',
+    imageLink: '',
+    credit: '',
+    description: 'He has a tiny booty.'
+  }
+
 }
 
 export default interestingAnimals
