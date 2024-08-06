@@ -7,8 +7,9 @@ export default function InterestingAnimals() {
   
 
   return (
+    <>
     <div className="text-center">
-      <h1>Some Cool Animals</h1>
+      <h2>Some Cool Animals</h2>
       <p>Below are 8 animals I think are cool and/or cute. Click on each one to learn a little more about them!</p>
       {animalNames.map((name, i) => {
         let spacedName = name.match(/[A-Z][a-z]+/g)
@@ -18,6 +19,8 @@ export default function InterestingAnimals() {
           <h3 key={i}>{spacedName.join(" ")}</h3>
         </Link>)
       })}
+      </div>
+      <div className="text-center">
       <h2>A Few Interesting Animals</h2>
       <p>Here are some peculiar animals you might not know about...</p>
       {animalNames.map((name, i) => {
@@ -29,5 +32,6 @@ export default function InterestingAnimals() {
         </Link>)
       })}
     </div>
+    </>
   )
 }
