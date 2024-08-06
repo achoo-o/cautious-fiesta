@@ -3,6 +3,7 @@
 [x] Add a description to each animal object
 [ ] Successfully list all animal names on page
 [ ] Add links to each animal which displays their image + links
+[ ] Refactor InterestingAnimals --> Add component ?
 
 ## Packages Included
 
