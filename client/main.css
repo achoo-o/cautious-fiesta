@@ -81,6 +81,12 @@ header {
   text-align: center;
 }
 
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
 footer {
   display: table;
   position: absolute;

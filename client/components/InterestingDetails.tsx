@@ -10,7 +10,7 @@ export default function InterestingDetails() {
       <h2>{prettyName}</h2>
       <img src={`/images/${imageName}`}></img>
       <p>
-      <a href={imageLink}>Image</a> | 
+      <a href={imageLink}>Image</a>&nbsp;&nbsp;|&nbsp;&nbsp;
       <a href={credit}>Credit</a>
       </p>
       <p>{description}</p>
