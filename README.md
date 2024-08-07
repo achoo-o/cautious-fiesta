@@ -5,6 +5,7 @@
 - [x] Add links to each animal which displays their image + links
 - [ ] Refactor InterestingAnimals --> Add component ?
 - [ ] Fix error in InterestingDetails.tsx (unobstructive)
+- [ ] Add pictures of the 3 funky animals
 
 ## Packages Included
 
