@@ -13,7 +13,7 @@ export default function InterestingAnimals() {
           learn a little more about them!
         </p>
         {animalNames.map((name, i) => {
-          let spacedName = name.match(/[A-Z][a-z]+/g)
+          const spacedName = name.match(/[A-Z][a-z]+/g)
           if (spacedName && i < 8)
             //JapaneseSpiderCrab at index 9 is the start of the 'interesting' list. Could make this a component and prop drill.
             return (
@@ -27,7 +27,7 @@ export default function InterestingAnimals() {
         <h2>A Few Interesting Animals</h2>
         <p>Here are some peculiar animals you might not know about...</p>
         {animalNames.map((name, i) => {
-          let spacedName = name.match(/[A-Z][a-z]+/g)
+          const spacedName = name.match(/[A-Z][a-z]+/g)
           if (
             spacedName &&
             (name == 'JapaneseSpiderCrab' ||
@@ -40,6 +40,7 @@ export default function InterestingAnimals() {
               </Link>
             )
         })}
+
       </div>
     </>
   )
