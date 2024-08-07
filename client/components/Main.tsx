@@ -14,6 +14,11 @@ export default function Main() {
       <p>Highlighted Animals</p>
       </Link>
       </div>
+      <div className="menu-item text-center margin30">
+      <Link to={'waka-kotahi/road-events'}>
+      <p>Road Events (API)</p>
+      </Link>
+      </div>
     </div>
   )
 }
