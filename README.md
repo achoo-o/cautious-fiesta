@@ -15,6 +15,7 @@
   - [ ] Set up color variables in main.css
   - [ ] Create impact-type.js
   - [ ] Creates function which changes color dependent on content
+- [ ] Make it so each event item can be filtered by city (look at https://developers.google.com/maps/documentation/geocoding/?csw=1#ReverseGeocoding)
 
 ## Packages Included
 
