@@ -20,13 +20,14 @@ export default function RoadEvents() {
         const timestampToDate = new Date(timestamp)
         const dateArr = timestampToDate.toString().split('')
         const date = dateArr.splice(0, 10).join('') + ' ' + dateArr.splice(6,5).join('')
-
+        const obj = el.properties
         return (
           <div className="event-item" key={el.properties.GlobalID}>
             <div className="circle"></div>
             <ul>
             <li>{`${date}`}</li>
-            <li>{`${el.properties.locationArea}`}</li>
+            <li>{`${obj.eventType}: ${obj.eventDescription}`}</li>
+            <li>{`${obj.impact} on ${obj.locationArea}`}</li>
             </ul>
           </div>
         )
