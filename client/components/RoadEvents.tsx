@@ -14,7 +14,7 @@ export default function RoadEvents() {
   if (isError) return (<p>{`Failed to retrieve data: ${error.message}`}</p>)
 
   return (
-    <div>
+    <div className="event-container">
       {data.features.map((el) => {
         const timestamp = el.properties.startDate
         const timestampToDate = new Date(timestamp)
@@ -22,9 +22,12 @@ export default function RoadEvents() {
         const date = dateArr.splice(0, 10).join('') + ' ' + dateArr.splice(6,5).join('')
 
         return (
-          <div key={el.properties.GlobalID}>
-            <p>{`${date}`}</p>
-            <p>{`${el.properties.locationArea}`}</p>
+          <div className="event-item" key={el.properties.GlobalID}>
+            <div className="circle"></div>
+            <ul>
+            <li>{`${date}`}</li>
+            <li>{`${el.properties.locationArea}`}</li>
+            </ul>
           </div>
         )
       })}

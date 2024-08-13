@@ -13,12 +13,13 @@
 }
 
 /* Utilities */
-.fw600 {
-  font-weight: 600;
-}
 
 .margin30 {
   margin: 30px;
+}
+
+.fw600 {
+  font-weight: 600;
 }
 
 .text-center {
@@ -131,4 +132,38 @@ footer p {
     font-size: 16.5px;
     
   }
+}
+
+/* Road Events */
+.event-container {
+  display: flex;
+  gap: 20px;
+  flex-flow: row wrap;
+  padding: 5em 2em;
+  text-align: left;
+  justify-content: center;
+}
+
+.event-item {
+  position: relative;
+  width: 22%;
+  padding-inline: 1em;
+  color: white;
+  background-color: rgb(41, 40, 53);
+  border-top: 2em black solid;
+  border-radius: 14px 14px 8px 5px;
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: -1.5em;
+  right: 1em;
+  width: 20px;
+  height: 20px;
+  background-color: red; /**/
+  border-radius: 100%;
 }
