@@ -12,15 +12,19 @@ export default function RoadEvents() {
   if (isPending) return (<p>Loading...</p>)
 
   if (isError) return (<p>{`Failed to retrieve data: ${error.message}`}</p>)
-
+  
+  function translateDate(date: number) {
+    const translate = new Date(date).toString().split('')
+    return translate.splice(0, 10).join('') + ' ' + translate.splice(6,5).join('')
+  }
+  
   return (
     <div className="event-container">
       {data.features.map((el) => {
-        const timestamp = el.properties.startDate
-        const timestampToDate = new Date(timestamp)
-        const dateArr = timestampToDate.toString().split('')
-        const date = dateArr.splice(0, 10).join('') + ' ' + dateArr.splice(6,5).join('')
+
+        const date =  translateDate(el.properties.startDate)
         const obj = el.properties
+
         return (
           <div className="event-item" key={el.properties.GlobalID}>
             <div className="circle"></div>
