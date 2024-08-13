@@ -1,4 +1,7 @@
 # TO DO:
+- [ ] Add the actual list of packages listed in this README file
+
+## Animal Highlights / Interesting Animals
 - [x] Add interesting animals to animals object
 - [x] Add a description to each animal object
 - [x] Successfully list all animal names on page
@@ -6,7 +9,12 @@
 - [ ] Refactor InterestingAnimals --> Add component ?
 - [ ] Fix error in InterestingDetails.tsx (unobstructive)
 - [ ] Add pictures of the 3 funky animals
-- [ ] Add the actual list of packages listed in this README file
+
+## Road Events
+- [ ] CSS/JS: Impact types include: Road Closed, Caution, and Delays. Based on type, I want to change the colour of the circle div on the event-item.
+  - [ ] Set up color variables in main.css
+  - [ ] Create impact-type.js
+  - [ ] Creates function which changes color dependent on content
 
 ## Packages Included
 
