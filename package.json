@@ -6,7 +6,9 @@
   "repository": "https://github.com/dev-academy-challenges/react-boilerplate.git",
   "main": "server/index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/index.ts",
     "build": "vite build",
     "test": "vitest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
@@ -44,6 +46,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "superagent": "^10.0.0",
+    "tsx": "^4.6.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.0",
     "vitest": "^1.2.0"

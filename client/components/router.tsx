@@ -12,7 +12,7 @@ export const routes = createRoutesFromElements(
     <Route path='top-100-animals' element={<Top100Animals />} />
     <Route path='interesting-animals' element={<InterestingAnimals />} />
     <Route path='interesting-animals/:name' element={<InterestingDetails />} />
-    <Route path='waka-kotahi/road-events' element={<RoadEvents />} />
+    <Route path='waka' element={<RoadEvents />} />
   </Route>
 )
 

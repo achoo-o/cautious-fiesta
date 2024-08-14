@@ -1,9 +1,9 @@
 import request from 'superagent'
 import type { RoadEvents } from "../../../models/road-events";
 
+//Generic Link: https://opendata-nzta.opendata.arcgis.com/datasets/NZTA::road-events/explore
+
 export async function fetchRoadEvents() {
-  //Calling backend route
-  const res = await request.get(`/api/v1/waka-kotahi/road-events`)
-  console.log('Responseee',res)
+  const res = await request.get(`/api/v1/waka`)
   return res.body as RoadEvents
 }

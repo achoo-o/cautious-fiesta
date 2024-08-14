@@ -24,7 +24,7 @@ export default function RoadEvents() {
       {data.features.map((el) => {
 
         const date =  translateDate(el.properties.startDate)
-        const obj = el.properties
+        // const obj = el.properties DESTRUCTURE
 
         return (
           <div className="event-item" key={el.properties.GlobalID}>
