@@ -15,7 +15,7 @@ export default function Main() {
       </Link>
       </div>
       <div className="menu-item text-center margin30">
-      <Link to={'waka-kotahi/road-events'}>
+      <Link to={'roadevents'}>
       <p>Road Events (API)</p>
       </Link>
       </div>

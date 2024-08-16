@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { fetchRoadEvents } from "./apis/wakaKotahi"
+import { Identifiers } from '../../models/road-events'
 
 
 export default function RoadEvents() {
@@ -21,18 +22,18 @@ export default function RoadEvents() {
   
   return (
     <div className="event-container">
-      {data.features.map((el) => {
+      {data.features.map((obj: Identifiers) => {
 
-        const date =  translateDate(el.properties.startDate)
-        // const obj = el.properties DESTRUCTURE
+        const date =  translateDate(obj.properties.startDate)
+        const { eventType, eventDescription, impact, locationArea, GlobalID } = obj.properties
 
         return (
-          <div className="event-item" key={el.properties.GlobalID}>
+          <div className="event-item" key={GlobalID}>
             <div className="circle"></div>
             <ul>
             <li>{`${date}`}</li>
-            <li>{`${obj.eventType}: ${obj.eventDescription}`}</li>
-            <li>{`${obj.impact} on ${obj.locationArea}`}</li>
+            <li>{`${eventType}: ${eventDescription}`}</li>
+            <li>{`${impact} on ${locationArea}`}</li>
             </ul>
           </div>
         )

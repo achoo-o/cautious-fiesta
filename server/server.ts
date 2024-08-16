@@ -13,6 +13,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(join(__dirname, './public')))
 
-server.use('/api/v1/waka', geocoding)
+server.use('/api/v1/roadevents', geocoding)
 
 export default server
