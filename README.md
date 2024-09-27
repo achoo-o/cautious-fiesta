@@ -1,4 +1,9 @@
-# TO DO:
+# What is this project?
+This project was used during Dev Academy to reinforce my learning with React.
+It includes single-input form practice, multi-input form practice, and an API call.
+This project is dead for now, but I may be interested in revisiting the API call again someday.
+
+## TO DO:
 - [ ] Add the actual list of packages listed in this README file
 
 ## Animal Highlights / Interesting Animals
